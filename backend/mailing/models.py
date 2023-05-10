@@ -51,9 +51,7 @@ class Client(models.Model):
 
     @property
     def formatted_phone_number(self):
-        result = '+7' if self.phone[0] == '7' else '8'
-        result += f' ({self.phone[1:4]}) {self.phone[4:7]}-{self.phone[7:9]}-{self.phone[9:11]}'
-        return result
+        return f'+7 ({self.phone[1:4]}) {self.phone[4:7]}-{self.phone[7:9]}-{self.phone[9:11]}'
 
     class Meta:
         verbose_name = 'Client'
