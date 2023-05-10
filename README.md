@@ -36,12 +36,12 @@ python manage.py createsuperuser
 #### Now, you are ready to use the API.
 The project uses nginx, so it runs on 80 port (wtih default settings).
 ```
-localhost/api/
+http://localhost/api/
 ```
 
 #### If you want to see the API docs, then use
 ```
-localhost/docs/
+http://localhost/docs/
 ```
 
 #### There is a script 'mailing.py' that runs every 15 minutes. It has logs at /logs/mailing.log
