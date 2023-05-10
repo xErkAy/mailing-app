@@ -1,1 +1,40 @@
-# mailing-app
+# Mailing app
+
+## Getting started
+
+#### Copy the content from .env.example to .env file
+```
+cp .env.example .env
+```
+
+#### Then build containers with the following command
+
+```
+docker-compose up -d
+```
+
+#### Make and apply all the migrations.
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Notice: you may have a problem with making migrations. If this is so, try to make them separatly for each app. Just like that:
+```
+python manage.py makemigrations project
+python manage.py migrate project
+```
+
+#### Create a superuser to use Django-Admin panel.
+
+```
+cd backend/
+python manage.py createsuperuser
+```
+
+#### Now, you are ready to use the API.
+The project uses nginx, so it runs on 80 port (wtih default settings).
+```
+localhost/api/
+```
