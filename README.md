@@ -39,4 +39,9 @@ The project uses nginx, so it runs on 80 port (wtih default settings).
 localhost/api/
 ```
 
+#### If you want to see the API docs, then use
+```
+localhost/docs/
+```
+
 #### There is a script 'mailing.py' that runs every 15 minutes. It has logs at /logs/mailing.log
